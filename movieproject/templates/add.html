@@ -1,0 +1,16 @@
+
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Enter the name"><br>
+    <p></p>
+    <textarea placeholder="enter the description" name="des"> </textarea><br>
+    <p></p>
+    <input type="text" name="year" ><br>
+    <p></p>
+    <input type="date" name="date"><br>
+    <p></p>
+    <input type="file" name="image"><br>
+    <input type="submit">
+
+</form>

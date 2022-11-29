@@ -1,0 +1,21 @@
+{% extends 'common.html' %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        {% for i in film %}
+        <div class="col-md-4"><br>
+             <div class="card">
+                <div class="card-body">
+                <a href="actor/{{i.id}}">
+                    <b>{{i.name}}</b><br>
+                </div>
+             </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+
+{% endblock %}

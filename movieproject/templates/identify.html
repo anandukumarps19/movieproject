@@ -1,0 +1,22 @@
+{% extends 'common.html' %}
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="{{film1.image.url}}">
+        </div>
+        <div>
+            <style>
+                h1{color:red;}
+            </style>
+            <h1><b>{{film1.name}}</b></h1>
+                <h5>{{film1.des}}</h5><br>
+            <a class="btn btn-info" href="{% url 'Actors:update' film1.id %}">update</a>
+            <a class="btn btn-danger" href="{% url 'Actors:delete' film1.id %}">Delete</a>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
